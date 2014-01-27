@@ -28,7 +28,9 @@ BEFORE INSERT ON LOCATION
 FOR EACH ROW 
 BEGIN 
 SELECT loc_sequence.nextval into :new.LOC_ID from dual; 
-END;
+END
+.
+RUN;
 
 
 
