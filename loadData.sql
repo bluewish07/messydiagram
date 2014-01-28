@@ -97,3 +97,7 @@ FROM event_schema eve,location loc
 WHERE eve.EVENT_CITY = loc.CITY AND
       eve.EVENT_STATE = loc.STATE AND
       eve.EVENT_COUNTRY = loc.COUNTRY;
+
+--INSERT TO TAG TABLE
+INSERT INTO TAG
+SELECT * FROM tag_schema;
